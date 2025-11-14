@@ -1,0 +1,11 @@
+﻿using System;
+public static class ProgramConfig
+{
+    private const double ProgramVersion = 1.2;
+    private const string DeveloperName = "Alex";
+    public static void ShowInfo()
+    {
+        Console.WriteLine($"Разработчик: {DeveloperName}");
+        Console.WriteLine($"Версия программы: {ProgramVersion}");
+    }
+}
