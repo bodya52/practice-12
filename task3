@@ -1,0 +1,28 @@
+using System;
+
+namespace Practice12
+{
+public class ObjectCounter
+{
+    private static int CountObjects;
+    public ObjectCounter()
+    {
+        CountObjects++;
+    }
+    public static void PrintCountObjects()
+    {
+        Console.WriteLine($"Текущее количество объектов: {CountObjects}");
+    }
+}
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            ObjectCounter object1 = new ObjectCounter();
+            ObjectCounter.PrintCountObjects();
+            ObjectCounter object2 = new ObjectCounter();
+            ObjectCounter.PrintCountObjects();
+            Console.ReadLine();
+        }
+    }
+}
